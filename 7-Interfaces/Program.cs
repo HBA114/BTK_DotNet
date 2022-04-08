@@ -10,6 +10,7 @@ namespace _7_Interfaces
 
             // Rule1();
 
+
             Console.ReadLine();
         }
 
