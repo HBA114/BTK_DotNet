@@ -10,6 +10,10 @@ namespace _7_Interfaces
 
             // Rule1();
 
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new SqlServerCustomerDal());
+
+            customerManager.Add(new OracleServerCustomerDal());
 
             Console.ReadLine();
         }
