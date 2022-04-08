@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3-Loops", "Loops\3-Loops.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4-Strings", "4-Strings\4-Strings.csproj", "{386FECA2-9118-4D32-901F-5F0B93601581}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-Classes", "5-Classes\5-Classes.csproj", "{5ACFEB15-5354-4BE4-8178-5F2B44083BC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5-Classes", "5-Classes\5-Classes.csproj", "{5ACFEB15-5354-4BE4-8178-5F2B44083BC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-RecapDemo", "RecapDemo\6-RecapDemo.csproj", "{11CE5308-41CB-478D-A8E5-0D516977F0E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-Interfaces", "7-Interfaces\7-Interfaces.csproj", "{DA836821-FF93-4F0C-BB12-04AAB0BB4EBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7-Interfaces", "7-Interfaces\7-Interfaces.csproj", "{DA836821-FF93-4F0C-BB12-04AAB0BB4EBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-InterfacesDemo", "8-InterfacesDemo\8-InterfacesDemo.csproj", "{D9FF3D3C-6B71-42B9-AC61-2890DD64EC56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{DA836821-FF93-4F0C-BB12-04AAB0BB4EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA836821-FF93-4F0C-BB12-04AAB0BB4EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA836821-FF93-4F0C-BB12-04AAB0BB4EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9FF3D3C-6B71-42B9-AC61-2890DD64EC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9FF3D3C-6B71-42B9-AC61-2890DD64EC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9FF3D3C-6B71-42B9-AC61-2890DD64EC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9FF3D3C-6B71-42B9-AC61-2890DD64EC56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
