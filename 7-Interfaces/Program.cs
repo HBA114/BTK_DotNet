@@ -10,12 +10,29 @@ namespace _7_Interfaces
 
             // Rule1();
 
+            // InterfaceDemo();
+
+            ICustomerDal[] customerDals = new ICustomerDal[]
+            { 
+                new SqlServerCustomerDal(), 
+                new OracleServerCustomerDal(),
+                new MySqlCustomerDal()
+            };
+
+            foreach (var customerDal in customerDals)
+            {
+                customerDal.Add();
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void InterfaceDemo()
+        {
             CustomerManager customerManager = new CustomerManager();
             customerManager.Add(new SqlServerCustomerDal());
 
             customerManager.Add(new OracleServerCustomerDal());
-
-            Console.ReadLine();
         }
 
         private static void Rule1()
@@ -81,7 +98,7 @@ namespace _7_Interfaces
     {
         public void Add(IPerson person)     // sadece IPerson özelliklerine erişilebilir.
         {
-            Console.WriteLine("{0} {1} Eklendi",person.FirstName,person.LastName);
+            Console.WriteLine("{0} {1} Eklendi", person.FirstName, person.LastName);
         }
     }
 }
