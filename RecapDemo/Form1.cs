@@ -27,7 +27,7 @@ namespace RecapDemo
 
             Button[,] buttons = new Button[8, 8];
 
-            int count = 1;
+            // int count = 1;
 
 
             for (int i = 0; i <= buttons.GetUpperBound(0); i++)
