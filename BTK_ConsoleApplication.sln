@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0-Conditionals", "BTK_ConsoleApplication\0-Conditionals.csproj", "{FA1E4ECC-A29E-41F6-AA66-1E1F8DADBDD9}"
 EndProject
@@ -28,6 +28,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-AbstractClasses", "11-AbstractClasses\11-AbstractClasses.csproj", "{F3D0039E-38EE-4BA8-85B2-C55C825E2FD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-RecapDemo2", "12-RecapDemo2\12-RecapDemo2.csproj", "{8DA2E963-980B-441A-B8D5-3B8BC81CA161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-AccessModifiers", "13-AccesModifiers\13-AccessModifiers.csproj", "{B1D70890-04C2-4829-8520-6D5CA3B06EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-AccessModifiersDemo", "14-AccessModifiersDemo\14-AccessModifiersDemo.csproj", "{30C0DF59-129A-44DE-964D-2932CD1AFB0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15-Constructors", "15-Constructors\15-Constructors.csproj", "{2215FC4D-CC9E-4749-9423-BA3701855E62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +93,18 @@ Global
 		{8DA2E963-980B-441A-B8D5-3B8BC81CA161}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DA2E963-980B-441A-B8D5-3B8BC81CA161}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DA2E963-980B-441A-B8D5-3B8BC81CA161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D70890-04C2-4829-8520-6D5CA3B06EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D70890-04C2-4829-8520-6D5CA3B06EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D70890-04C2-4829-8520-6D5CA3B06EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D70890-04C2-4829-8520-6D5CA3B06EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C0DF59-129A-44DE-964D-2932CD1AFB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C0DF59-129A-44DE-964D-2932CD1AFB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C0DF59-129A-44DE-964D-2932CD1AFB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C0DF59-129A-44DE-964D-2932CD1AFB0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2215FC4D-CC9E-4749-9423-BA3701855E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2215FC4D-CC9E-4749-9423-BA3701855E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2215FC4D-CC9E-4749-9423-BA3701855E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2215FC4D-CC9E-4749-9423-BA3701855E62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
