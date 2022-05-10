@@ -1,7 +1,7 @@
 ﻿
-// Student student = new Student();
-// student.Save2();
-Console.ReadLine()
+Student student = new Student();
+student.Save2();
+Console.ReadLine();
 
 
 class Customer
