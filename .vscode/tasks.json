@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/18-Exceptions/18-Exceptions.csproj",
+                "${workspaceFolder}/19-Database/19-Database.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/18-Exceptions/18-Exceptions.csproj",
+                "${workspaceFolder}/19-Database/19-Database.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/18-Exceptions/18-Exceptions.csproj"
+                "${workspaceFolder}/19-Database/19-Database.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -29,7 +29,7 @@ void HandleException(Action action)
     }
 }
 
-// Console.ReadLine();
+Console.ReadLine();
 
 static void Find()
 {
