@@ -1,4 +1,5 @@
-﻿// Course course = new Course(); // error !! 
+﻿using System;
+// Course course = new Course(); // error !! 
 // for use another projects class
 // 1 - go to references in this project
 // 2 - under the Projetcs -> Solutions select project

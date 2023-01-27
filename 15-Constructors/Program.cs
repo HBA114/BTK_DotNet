@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 CustomerManager customerManager = new CustomerManager(10);
 //customerManager.Add();
 customerManager.List();

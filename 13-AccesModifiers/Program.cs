@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 Student student = new Student();
 student.Save2();
 Console.ReadLine();

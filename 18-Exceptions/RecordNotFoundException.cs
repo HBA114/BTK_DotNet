@@ -1,3 +1,5 @@
+using System;
+
 public class RecordNotFoundException : Exception
 {
     public RecordNotFoundException(string Message) : base(Message)
