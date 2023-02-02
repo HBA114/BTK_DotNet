@@ -10,14 +10,40 @@ using System.Collections.Generic;
 // {
 //     System.Console.WriteLine("Record Not Found");
 //     System.Console.WriteLine(exception.Message);
-//     // throw;
 // }
 
 // try catch yerine Handle Exception kullan (lambda ile fonksiyon gönderildi)
-HandleException(()=>
+//* Action Demo
+// HandleException(()=>
+// {
+//     Find();
+// });
+
+
+Func<int, int, int> add = Sum;
+
+Console.WriteLine($"{add(3, 4)}");
+
+Console.WriteLine($"{Sum(2, 3)}");
+
+
+Func<int> getRandomNumber = delegate ()
 {
-    Find();
-});
+    Random random = new Random();
+    return random.Next(1, 100);
+};
+
+Func<int> getRandomNumber2 = () => new Random().Next(1, 100);
+
+Console.WriteLine($"Random : {getRandomNumber()}");
+
+Console.WriteLine($"Random2 : {getRandomNumber2()}");
+
+
+static int Sum(int x, int y)
+{
+    return x + y;
+}
 
 void HandleException(Action action)
 {
@@ -31,7 +57,7 @@ void HandleException(Action action)
     }
 }
 
-Console.ReadLine();
+// Console.ReadLine();
 
 static void Find()
 {
