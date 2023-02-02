@@ -1,14 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-
-// Math math = new Math(2,5);
-
-// Console.WriteLine($"{math.Add(3,8)}");
-// Console.WriteLine($"{math.Add2()}");
-
-// Console.WriteLine($"{math.Multiply(3,8)}");
-// Console.WriteLine($"{math.Multiply2()}");
+﻿using System.Reflection;
 
 var type = typeof(MathOperators);
 
@@ -16,6 +6,31 @@ MathOperators mathOperators = (MathOperators)Activator.CreateInstance(type, 6,7)
 
 Console.WriteLine($"{mathOperators.Add(4,5)}");
 Console.WriteLine($"{mathOperators.Add2()}");
+
+var instance = Activator.CreateInstance(type, 1,2);
+
+MethodInfo methodInfo = instance!.GetType().GetMethod("Add2")!;
+
+Console.WriteLine($"Result: {methodInfo.Invoke(instance ,null)}");
+
+
+var methods = type.GetMethods();
+
+Console.WriteLine($"--------------");
+foreach (var info in methods)
+{
+    Console.WriteLine($"Method Name: {info.Name}");
+    foreach (var parameter in info.GetParameters())
+    {
+        Console.WriteLine($"Parameter Name: {parameter.Name}");
+    }
+    foreach (var attribute in info.GetCustomAttributes())
+    {
+        Console.WriteLine($"Attribute: {attribute.GetType().Name}");
+    }
+    Console.WriteLine($"");
+}
+
 
 public class MathOperators
 {
@@ -47,8 +62,17 @@ public class MathOperators
         return _number1 + _number2;
     }
 
+    [MethodName("Multiplies")]
     public int Multiply2()
     {
         return _number1 * _number2;
+    }
+}
+
+public class MethodNameAttribute : Attribute
+{
+    public MethodNameAttribute(String name)
+    {
+        
     }
 }
