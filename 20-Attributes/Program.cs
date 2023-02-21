@@ -1,8 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-Customer customer = new Customer() { Id = 1, LastName = "Ayhaner", Age = 23 };
+﻿Customer customer = new Customer() { Id = 1, LastName = "Ayhaner", Age = 23 };
 
 CustomerDal customerDal = new CustomerDal();
 

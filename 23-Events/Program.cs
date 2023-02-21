@@ -52,7 +52,14 @@ public class Product
 
     public void Sell(int amount)
     {
-        Stock -= amount;
-        Console.WriteLine($"Stock Amount: {Stock}");
+        if (amount <= Stock)
+        {
+            Stock -= amount;
+            Console.WriteLine($"Stock Amount: {Stock}");
+        }
+        else
+        {
+            Console.WriteLine($"There is not enough Stock for this sale amount ({amount}). Stock Amount: {Stock}");
+        }
     }
 }
