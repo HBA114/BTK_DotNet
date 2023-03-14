@@ -1,13 +1,14 @@
 ﻿
 
 ProductManager productManager = new ProductManager(new Factory1());
-
 productManager.GetAll();
 
 
 ProductManager productManager2 = new ProductManager(new Factory2());
-
 productManager2.GetAll();
+
+ProductManager productManager3 = new ProductManager(new Factory3());
+productManager3.GetAll();
 
 public abstract class Logging
 {
@@ -76,6 +77,19 @@ public class Factory2 : CrossCuttingConcernsFactory
     public override Caching CreateCaching()
     {
         return new RedisCache();
+    }
+
+    public override Logging CreateLogger()
+    {
+        return new NLogger();
+    }
+}
+
+public class Factory3 : CrossCuttingConcernsFactory
+{
+    public override Caching CreateCaching()
+    {
+        return new MemCache();
     }
 
     public override Logging CreateLogger()
