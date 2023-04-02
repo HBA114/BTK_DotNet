@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31-Composite", "31-Composit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32-Proxy", "32-Proxy\32-Proxy.csproj", "{5BDD5C0C-5AE7-4CA6-A244-46EF1B1B8964}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "33-Decorator", "33-Decorator\33-Decorator.csproj", "{7D6C1DC9-CC53-46D1-9E5A-669F88986169}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -211,6 +213,10 @@ Global
 		{5BDD5C0C-5AE7-4CA6-A244-46EF1B1B8964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BDD5C0C-5AE7-4CA6-A244-46EF1B1B8964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BDD5C0C-5AE7-4CA6-A244-46EF1B1B8964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6C1DC9-CC53-46D1-9E5A-669F88986169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6C1DC9-CC53-46D1-9E5A-669F88986169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6C1DC9-CC53-46D1-9E5A-669F88986169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6C1DC9-CC53-46D1-9E5A-669F88986169}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
