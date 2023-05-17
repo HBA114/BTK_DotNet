@@ -1,7 +1,12 @@
 ﻿#region main
 
-// ProductManager productManager = new ProductManager(new EfProductDal());
-ProductManager productManager = new ProductManager(new NHProductDal());
+using Ninject;
+
+IKernel kernel = new StandardKernel();
+// kernel.Bind<IProductDal>().To<NHProductDal>().InSingletonScope();
+kernel.Bind<IProductDal>().To<EfProductDal>().InSingletonScope();
+
+ProductManager productManager = new ProductManager(kernel.Get<IProductDal>());
 productManager.Save();
 
 #endregion

@@ -15,5 +15,8 @@
         "**/obj": true,
         "obj": true
     },
-    "explorerExclude.backup": {}
+    "explorerExclude.backup": {},
+    "cSpell.words": [
+        "Ninject"
+    ]
 }
