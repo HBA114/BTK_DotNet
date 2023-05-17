@@ -2,9 +2,25 @@ namespace ShoppingCart.Tests;
 
 public class CartTests
 {
+    private CartManager _cartManager;
+    private CartItem _cartItem;
+
+    // TestInitialize in .NET Framework, Runs before all individually test methods
+    // example: runs before AddingProductToCartTest method, then runs before RemovingProductFromCartTest method
     [SetUp]
     public void Setup()
     {
+        _cartManager = new();
+        _cartItem = new(new() { Id = 1, Name = "Laptop", Price = 22890 }, 1);
+        _cartManager.Add(_cartItem);
+    }
+
+    // Runs after all individually test methods
+    // example: runs after AddingProductToCartTest method, then runs after RemovingProductFromCartTest method
+    [TearDown]
+    public void Cleanup()
+    {
+        _cartManager.Clear();   // representative
     }
 
     [Test]
@@ -13,12 +29,8 @@ public class CartTests
         // Arrange
         const int expected = 1;
 
-        CartManager cartManager = new();
-        CartItem cartItem = new(new() { Id = 1, Name = "Laptop", Price = 22890 }, 1);
-
         // Act
-        cartManager.Add(cartItem);
-        var cartItemCount = cartManager.TotalItems;
+        var cartItemCount = _cartManager.TotalItems;
 
         // Assert
         Assert.That(cartItemCount, Is.EqualTo(expected));   // constraint model
@@ -28,33 +40,26 @@ public class CartTests
     [Test]
     public void RemovingProductFromCartTest()
     {
-        // Arrange
-        CartManager cartManager = new();
-        CartItem cartItem = new(new() { Id = 1, Name = "Laptop", Price = 22890 }, 1);
+        int cartItemCount = _cartManager.TotalItems;
 
-        cartManager.Add(cartItem);
+        // Act
+        _cartManager.Remove(1);
 
-        int cartItemCount = cartManager.TotalItems;
+        int cartItemCountAfterRemove = _cartManager.TotalItems;
 
         // Assert
-        cartManager.Remove(1);
-
-        int cartItemCountAfterRemove = cartManager.TotalItems;
         Assert.That(cartItemCountAfterRemove, Is.EqualTo(cartItemCount - 1));
     }
 
     [Test]
     public void CleaningCartTest()
     {
-        // Arrange
-        CartManager cartManager = new();
-        CartItem cartItem = new(new() { Id = 1, Name = "Laptop", Price = 22890 }, 1);
 
         // Act
-        cartManager.Clear();
+        _cartManager.Clear();
 
         // Assert
-        Assert.That(cartManager.TotalItems, Is.EqualTo(0));
-        Assert.That(cartManager.TotalQuantity, Is.EqualTo(0));
+        Assert.That(_cartManager.TotalItems, Is.EqualTo(0));
+        Assert.That(_cartManager.TotalQuantity, Is.EqualTo(0));
     }
 }
