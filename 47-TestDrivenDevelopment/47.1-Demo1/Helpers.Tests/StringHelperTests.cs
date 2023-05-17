@@ -26,7 +26,7 @@ public class StringHelperTests
     public void RemoveUnnecessarySpacesInBetweenWords()
     {
         // Arrange
-        var s = "Hello     World";
+        var s = "     Hello     World       ";
         var expected = "Hello World";
 
         // Act
