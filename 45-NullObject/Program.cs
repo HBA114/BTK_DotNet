@@ -1,8 +1,10 @@
 ﻿#region main
 
 CustomerManager customerManager = new CustomerManager(new NLogLogger());
-
 customerManager.Save();
+
+CustomerManagerTest customerManagerTest = new CustomerManagerTest();
+customerManagerTest.SaveTest();
 
 #endregion
 
@@ -46,7 +48,7 @@ class NLogLogger : ILogger
 
 class StubLogger : ILogger
 {
-    private static StubLogger _stubLogger;
+    private static StubLogger? _stubLogger;
     private static object _lock = new object();
 
     private StubLogger() { }
@@ -72,7 +74,9 @@ class CustomerManagerTest
 {
     public void SaveTest()
     {
+        Console.WriteLine("Save Test Started");
         CustomerManager customerManager = new CustomerManager(StubLogger.GetLogger());
         customerManager.Save();
+        Console.WriteLine("Save Test Passed");
     }
 }
