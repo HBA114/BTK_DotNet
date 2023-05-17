@@ -11,8 +11,8 @@ public class StringHelperTests
     public void RemoveStartAndEndSpacesTest()
     {
         // Arrange
-        var s = "    Hasan  ";
-        var expected = "Hasan";
+        var s = "    Hello  ";
+        var expected = "Hello";
 
         // Act
         var actual = StringHelper.RemoveUnnecessarySpaces(s);
@@ -26,8 +26,8 @@ public class StringHelperTests
     public void RemoveUnnecessarySpacesInBetweenWords()
     {
         // Arrange
-        var s = "Hasan     Basri";
-        var expected = "Hasan Basri";
+        var s = "Hello     World";
+        var expected = "Hello World";
 
         // Act
         var actual = StringHelper.RemoveUnnecessarySpaces(s);
