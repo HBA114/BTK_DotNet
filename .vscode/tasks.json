@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/19-Database/19-Database.csproj",
+                "${workspaceFolder}/43-Visitor/43-Visitor.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/19-Database/19-Database.csproj",
+                "${workspaceFolder}/43-Visitor/43-Visitor.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/19-Database/19-Database.csproj"
+                "${workspaceFolder}/43-Visitor/43-Visitor.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
