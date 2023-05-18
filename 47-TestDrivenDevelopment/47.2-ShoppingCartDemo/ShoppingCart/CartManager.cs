@@ -3,6 +3,8 @@ namespace ShoppingCart;
 // TODO 1 : Adding product to cart
 // TODO 2 : Removing  product from cart
 // TODO 3 : Cleaning cart (removing all products from cart)
+// TODO 4 : Adding product that cart already contains should increase total quantity, should not increase total count
+// TODO 5 : Adding product that cart does not contains should increase total quantity and total count by 1
 
 public class CartManager
 {
