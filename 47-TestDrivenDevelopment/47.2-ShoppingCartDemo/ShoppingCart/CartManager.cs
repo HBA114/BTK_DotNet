@@ -5,6 +5,7 @@ namespace ShoppingCart;
 // TODO 3 : Cleaning cart (removing all products from cart)
 // TODO 4 : Adding product that cart already contains should increase total quantity, should not increase total count
 // TODO 5 : Adding product that cart does not contains should increase total quantity and total count by 1
+// Todo 6 : Trying to remove a product that not exists in Cart should throw NullReferenceException
 
 public class CartManager
 {
