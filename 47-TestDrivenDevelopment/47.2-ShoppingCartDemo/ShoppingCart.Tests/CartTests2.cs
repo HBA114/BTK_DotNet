@@ -44,7 +44,7 @@ public class CartTests2
         int expectedTotalItem = _cartManager.TotalItems;
 
         // Act
-        _cartManager.Add(_cartItem);    //! Fails, because logic in CartManager.Add() is not suits with test
+        _cartManager.Add(_cartItem);    // * Fixed After Test Fail
 
         // Assert
         Assert.That(_cartManager.TotalQuantity, Is.EqualTo(expectedTotalQuantity));

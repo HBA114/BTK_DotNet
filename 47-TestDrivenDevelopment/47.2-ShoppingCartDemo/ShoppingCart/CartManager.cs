@@ -17,12 +17,13 @@ public class CartManager
 
     public void Add(CartItem cartItem)
     {
-        if (_cartItems.Any(x => x.Product.Id == cartItem.Product.Id))
+        CartItem? cartItemTemp = _cartItems.SingleOrDefault(x => x.Product.Id == cartItem.Product.Id);
+        if (cartItemTemp is null)
         {
-            _cartItems.First(x => x.Product.Id == cartItem.Product.Id).Quantity += cartItem.Quantity;
+            _cartItems.Add(cartItem);
             return;
         }
-        _cartItems.Add(cartItem);
+        cartItemTemp.Quantity += cartItem.Quantity;
     }
 
     public void Remove(int id)
