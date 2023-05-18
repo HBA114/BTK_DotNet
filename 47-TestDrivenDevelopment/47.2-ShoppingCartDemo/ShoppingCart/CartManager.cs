@@ -17,6 +17,11 @@ public class CartManager
 
     public void Add(CartItem cartItem)
     {
+        if (_cartItems.Any(x => x.Product.Id == cartItem.Product.Id))
+        {
+            _cartItems.First(x => x.Product.Id == cartItem.Product.Id).Quantity += cartItem.Quantity;
+            return;
+        }
         _cartItems.Add(cartItem);
     }
 
