@@ -84,4 +84,21 @@ public class UnitTest1
 
         CollectionAssert.AllItemsAreInstancesOfType(collection: list, expectedType: typeof(string));
     }
+
+    [TestMethod]
+    public void IsSubSetOfTest()
+    {
+        List<string> newUsers = new() { "Hasan", "Mustafa" };
+        List<string> oldUsers = new() { "Basri", "Ahmet" };
+
+        CollectionAssert.IsSubsetOf(subset: newUsers, superset: _users);
+        CollectionAssert.IsNotSubsetOf(subset: oldUsers, superset: _users);
+    }
+
+    [TestMethod]
+    public void ContainsTest()
+    {
+        CollectionAssert.Contains(collection: _users, element: "Hasan");
+        CollectionAssert.DoesNotContain(collection: _users, element: "Basri");
+    }
 }
