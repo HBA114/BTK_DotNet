@@ -43,12 +43,40 @@ public class UnitTest1
         Assert.AreEqual(1, 1);
     }
 
-    [TestMethod]
+    [TestMethod, Description("This is a test description")]
     [Owner("Basri")]
     [TestCategory("Developer")]
     [Priority(2)]
     public void TestMethod5()
     {
+        Assert.AreEqual(1, 1);
+    }
+
+    [TestMethod, Ignore]
+    [Owner("Basri")]
+    [TestCategory("Developer")]
+    [Priority(2)]
+    public void TestMethod6()
+    {
+        Assert.AreEqual(1, 1);
+    }
+
+    [TestMethod, Timeout(1000)]
+    [Owner("Basri")]
+    [TestCategory("Developer")]
+    [Priority(2)]
+    public void TestMethod7()
+    {
+        Assert.AreEqual(1, 1);
+    }
+
+    [TestMethod, Timeout(TestTimeout.Infinite)]
+    [Owner("Basri")]
+    [TestCategory("Developer")]
+    [Priority(2)]
+    public void TestMethod8()
+    {
+        Thread.Sleep(1500);
         Assert.AreEqual(1, 1);
     }
 }
